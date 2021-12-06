@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="Presentation">
+  <grid id="27dc6" binding="rootPanel" layout-manager="GridLayoutManager" row-count="12" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="20" y="20" width="965" height="600"/>
+    </constraints>
+    <properties>
+      <minimumSize width="700" height="300"/>
+      <preferredSize width="1000" height="700"/>
+    </properties>
+    <border type="etched" title="RunSQL" title-justification="1" title-position="1">
+      <font name="DialogInput" size="16" style="0"/>
+      <title-color color="-15459397"/>
+    </border>
+    <children>
+      <scrollpane id="e17f">
+        <constraints>
+          <grid row="0" column="0" row-span="2" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="DialogInput" size="14" style="0"/>
+          <horizontalScrollBarPolicy value="30"/>
+        </properties>
+        <border type="etched"/>
+        <children>
+          <component id="496eb" class="javax.swing.JTable" binding="queryTable">
+            <constraints/>
+            <properties>
+              <autoCreateColumnsFromModel value="true"/>
+              <autoResizeMode value="0"/>
+              <autoscrolls value="true"/>
+              <enabled value="true"/>
+              <fillsViewportHeight value="false"/>
+              <font name="DialogInput" size="12" style="0"/>
+              <preferredScrollableViewportSize width="550" height="500"/>
+            </properties>
+          </component>
+        </children>
+      </scrollpane>
+      <grid id="56173" layout-manager="GridLayoutManager" row-count="7" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="30" left="40" bottom="30" right="30"/>
+        <constraints>
+          <grid row="0" column="1" row-span="12" col-span="1" vsize-policy="3" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+        <border type="etched">
+          <font/>
+        </border>
+        <children>
+          <component id="9baae" class="javax.swing.JLabel" binding="QueryLabel">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Consolas" size="18" style="1"/>
+              <text value="Label"/>
+            </properties>
+          </component>
+          <component id="7f325" class="javax.swing.JTextPane" binding="QueryPane">
+            <constraints>
+              <grid row="1" column="0" row-span="2" col-span="2" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="1" use-parent-layout="false">
+                <preferred-size width="150" height="150"/>
+              </grid>
+            </constraints>
+            <properties>
+              <font name="DialogInput" size="14" style="0"/>
+              <text value="Test 1 2"/>
+            </properties>
+          </component>
+          <component id="8d40d" class="javax.swing.JButton" binding="runQueryButton" default-binding="true">
+            <constraints>
+              <grid row="3" column="0" row-span="3" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="DialogInput" size="14" style="0"/>
+              <text value="Run Query"/>
+            </properties>
+          </component>
+          <component id="740ea" class="javax.swing.JTextPane" binding="Messages">
+            <constraints>
+              <grid row="6" column="0" row-span="1" col-span="2" vsize-policy="6" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="50"/>
+              </grid>
+            </constraints>
+            <properties>
+              <editable value="false"/>
+              <font name="Consolas" size="14" style="0"/>
+              <text value="Welcome! Please enter server information to continue."/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="ec22f" layout-manager="GridLayoutManager" row-count="4" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="3" column="0" row-span="9" col-span="1" vsize-policy="3" hsize-policy="3" anchor="1" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Consolas" size="14" style="1"/>
+        </properties>
+        <border type="none" title=""/>
+        <children>
+          <component id="1b6f3" class="javax.swing.JButton" binding="connectToServerButton" default-binding="true">
+            <constraints>
+              <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="7" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Connect to Server"/>
+            </properties>
+          </component>
+          <component id="58197" class="javax.swing.JTextField" binding="userNameTextField">
+            <constraints>
+              <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="7" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties/>
+          </component>
+          <component id="af43e" class="javax.swing.JTextField" binding="serverTextField">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="7" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties/>
+          </component>
+          <component id="4dc5d" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="7" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Consolas" size="14" style="0"/>
+              <text value="Server Name"/>
+            </properties>
+          </component>
+          <component id="74230" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="7" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Consolas" size="14" style="0"/>
+              <text value="Login"/>
+            </properties>
+          </component>
+          <component id="cd272" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="7" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Consolas" size="14" style="0"/>
+              <text value="Password"/>
+            </properties>
+          </component>
+          <component id="b2ce9" class="javax.swing.JPasswordField" binding="passwordTextField">
+            <constraints>
+              <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties/>
+          </component>
+        </children>
+      </grid>
+      <component id="e95c0" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Consolas" size="14" style="0"/>
+          <text value="Server Information Submission"/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+</form>
