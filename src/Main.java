@@ -10,7 +10,7 @@ import javax.swing.*;
 public class Main {
 
     // Set to the correct UserId.
-    static String title = "RunSQL";
+    static String title = " ";
     static int UserId = 0;
     static String defaultDataBase = "master";
 
